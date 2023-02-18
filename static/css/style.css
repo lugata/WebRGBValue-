@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #211B46; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background: #D9D9D9;
+    padding: 0px;
+    min-width: 1021px;
+    max-height: 700.06px;
+    border-radius: 32.79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 17px 17px 10px -3px #00000054;
+}
+
+.title{
+    font-size: 34.04px;
+    font-weight:500;
+}
+
+.uploadbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 469.23px;
+    min-height: 390.03px;
+    max-width: 770.83px; 
+    max-height: 396.64px;
+
+    
+    outline-style: dashed;
+    outline-color: #000000;
+    outline-width: thick;
+    border-radius: 32.7901px;
+    z-index: 999;
+}
+
+
+.image-upload{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 50px;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+
+.image-upload img:hover{
+    width: 60px;
+    cursor: pointer;
+
+}
+
+.btnsubmit{
+    width: 100%;
+    background: #000000;
+    color: white;
+    border-radius: 33.86px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.RGB{
+
+    width: 100%;
+}
+
+.RGB-Box{
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 33.856px;
+}
+
+.red{
+    background: #8D0000;
+}
+
+.green{
+    background: #008D06;
+}
+
+.blue{
+    background: #14008D;
+}

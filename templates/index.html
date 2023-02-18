@@ -1,0 +1,58 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container text-center">
+  <div class="row box position-absolute top-50 start-50 translate-middle p-5">
+    <div id="container-md">
+      <h2 class="title mb-4"><strong>Select Image to Upload</strong> </h2>
+      
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="uploadbox col-10 text-center">
+        <form method="post" action="/" enctype="multipart/form-data">
+          {% if filename %}
+
+          <img
+            src="{{ url_for('display_image', filename=filename) }}"
+            style="max-width: 770.83px; max-height: 396.64px; object-fit: cover; border-radius: 32.7901px; z-index: 1; "
+          />
+
+          {% else %}
+          
+          <div class="image-upload">
+            <label for="file-input">
+              <img src="static/img/Vectorplus.svg" />
+            </label>
+
+            <input
+              id="file-input"
+              type="file"
+              name="file"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          {% endif %}
+        </div>
+        <div class="col-1"></div>
+          <div class="row mt-3">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <input type="submit" value="Submit File" class="btnsubmit pt-2 pb-2" />
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </form>
+        <div class="RGB row mt-4 text-center ">
+          <div class="col-2"></div>
+          <div class="RGB-Box red col-2 pt-2 pb-2 text-center">Red : {{R}}</div>
+          <div class="col-1"></div>
+          <div class="RGB-Box green col-2 pt-2 pb-2 text-center">Green : {{G}}</div>
+          <div class="col-1"></div>
+          <div class="RGB-Box blue col-2 pt-2 pb-2 text-center">Blue : {{B}}</div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
